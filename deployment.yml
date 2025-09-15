@@ -28,7 +28,9 @@ metadata:
   name: financeme
 spec:
   type: NodePort
+  selector:
+    app: financeme
   ports:
     - port: 8081
       targetPort: 8081
-  selector:
+      nodePort: 31282
